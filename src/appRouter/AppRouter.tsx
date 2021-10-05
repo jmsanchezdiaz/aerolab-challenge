@@ -1,19 +1,19 @@
-import { Route, Switch } from "wouter";
 import NavBar from "../components/NavBar/NavBar";
 import Error404Page from "../pages/Error404Page/Error404Page";
 import ProductPage from "../pages/ProductsPage/ProductPage";
 import ProfilePage from "../pages/ProfilePage/ProfilePage";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
 const AppRouter = () => {
   return (
-    <div>
+    <Router>
       <NavBar />
       <Switch>
-        <Route path="/aerolab-challenge" component={ProductPage} />
-        <Route path="/aerolab-challenge/profile" component={ProfilePage} />
-        <Route component={Error404Page} />
+        <Route exact path="/" component={ProductPage} />
+        <Route path="/profile" component={ProfilePage} />
+        <Route path="*" component={Error404Page} />
       </Switch>
-    </div>
+    </Router>
   );
 };
 

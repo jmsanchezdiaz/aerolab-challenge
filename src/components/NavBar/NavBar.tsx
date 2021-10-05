@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 import coin from "./coin.svg";
 import { ProductsContext } from "../../ProductsProvider/ProductsProvider";
 import { Actions } from "../../interfaces/interfaces";
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const { productsState, dispatch } = useContext(ProductsContext);
@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
     <nav className="navbar">
       <img src={logo} className="navbar__logo" alt="aerolab-logo" />
       <div className="navbar__userinfo">
-        <Link to="/aerolab-challenge/profile">
+        <Link className="navbar__userinfo-btn" to="/profile">
           <h3 className="navbar__username">John Kite</h3>
         </Link>
         <button onClick={increaseBalance} className="navbar__user">

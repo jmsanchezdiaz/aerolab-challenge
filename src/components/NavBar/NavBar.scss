@@ -12,6 +12,11 @@
     align-items: center;
     gap: 0.9375rem;
 
+    &-btn {
+      text-decoration: none;
+      color: #444;
+    }
+
     h3 {
       cursor: pointer;
       font-weight: lighter;

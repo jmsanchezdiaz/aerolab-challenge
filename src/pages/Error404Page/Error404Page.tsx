@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link } from "react-router-dom";
 import "./Error404Page.scss";
 
 const Error404Page = () => {
@@ -8,7 +8,7 @@ const Error404Page = () => {
       <h3 className="error404__subtitle">
         The resource you were looking for was not found
       </h3>
-      <Link className="error404__btn" to="/aerolab-challenge/profile">
+      <Link className="error404__btn" to="/profile">
         Back to Profile
       </Link>
     </div>
