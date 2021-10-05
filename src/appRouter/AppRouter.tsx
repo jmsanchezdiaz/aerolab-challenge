@@ -11,11 +11,11 @@ const AppRouter = () => {
       <Switch>
         <Route
           exact
-          path="/aerolab-challenge/profile"
+          path="/profile"
           component={ProfilePage}
         />
-        <Route path="/aerolab-challenge" component={ProductPage} />
-        <Route path="*" component={Error404Page} />
+        <Route  path="/" component={ProductPage} />
+        <Route component={Error404Page} />
       </Switch>
     </Router>
   );
