@@ -1,6 +1,6 @@
 import {
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Redirect,
 } from "react-router-dom";
