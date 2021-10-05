@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aerolabchallenge/static/css/main.b8171c0e.chunk.css",
-    "main.js": "/aerolabchallenge/static/js/main.61b34201.chunk.js",
-    "main.js.map": "/aerolabchallenge/static/js/main.61b34201.chunk.js.map",
+    "main.js": "/aerolabchallenge/static/js/main.b46ceb50.chunk.js",
+    "main.js.map": "/aerolabchallenge/static/js/main.b46ceb50.chunk.js.map",
     "runtime-main.js": "/aerolabchallenge/static/js/runtime-main.e181dfe4.js",
     "runtime-main.js.map": "/aerolabchallenge/static/js/runtime-main.e181dfe4.js.map",
     "static/js/2.8f6cb416.chunk.js": "/aerolabchallenge/static/js/2.8f6cb416.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.e181dfe4.js",
     "static/js/2.8f6cb416.chunk.js",
     "static/css/main.b8171c0e.chunk.css",
-    "static/js/main.61b34201.chunk.js"
+    "static/js/main.b46ceb50.chunk.js"
   ]
 }
