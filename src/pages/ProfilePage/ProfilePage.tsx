@@ -6,7 +6,7 @@ const ProfilePage = () => {
   return (
     <div className="profile-page">
       <div className="profile-page__bar">
-        <Link className="profile-page__back-button" to="/aerolab-challenge">
+        <Link className="profile-page__back-button" to="/">
           Back
         </Link>
         <h3 className="profile-page__label">Redeem Products</h3>
