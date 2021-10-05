@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
     <nav className="navbar">
       <img src={logo} className="navbar__logo" alt="aerolab-logo" />
       <div className="navbar__userinfo">
-        <Link className="navbar__userinfo-btn" to="/profile">
+        <Link className="navbar__userinfo-btn" to="/aerolabchallenge/profile">
           <h3 className="navbar__username">John Kite</h3>
         </Link>
         <button onClick={increaseBalance} className="navbar__user">

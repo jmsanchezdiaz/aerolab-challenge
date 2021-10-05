@@ -1,22 +1,10 @@
-import NavBar from "../components/NavBar/NavBar";
-import Error404Page from "../pages/Error404Page/Error404Page";
-import ProductPage from "../pages/ProductsPage/ProductPage";
-import ProfilePage from "../pages/ProfilePage/ProfilePage";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import PublicRoutes from "./PublicRoutes";
 
 const AppRouter = () => {
   return (
     <Router>
-      <NavBar />
-      <Switch>
-        <Route
-          exact
-          path="/profile"
-          component={ProfilePage}
-        />
-        <Route  path="/" component={ProductPage} />
-        <Route component={Error404Page} />
-      </Switch>
+      <Route path="/" component={PublicRoutes} />
     </Router>
   );
 };

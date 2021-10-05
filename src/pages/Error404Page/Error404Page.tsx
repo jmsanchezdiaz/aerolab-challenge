@@ -8,7 +8,7 @@ const Error404Page = () => {
       <h3 className="error404__subtitle">
         The resource you were looking for was not found
       </h3>
-      <Link className="error404__btn" to="/profile">
+      <Link className="error404__btn" to="/aerolabchallenge/profile">
         Back to Profile
       </Link>
     </div>
