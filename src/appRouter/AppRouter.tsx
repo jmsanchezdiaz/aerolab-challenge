@@ -4,7 +4,7 @@ import PublicRoutes from "./PublicRoutes";
 const AppRouter = () => {
   return (
     <Router>
-      <Route path="/" component={PublicRoutes} />
+      <Route path="/aerolabchallenge" component={PublicRoutes} />
     </Router>
   );
 };
