@@ -9,8 +9,8 @@ const AppRouter = () => {
     <div>
       <NavBar />
       <Switch>
-        <Route path="/" component={ProductPage} />
-        <Route path="/profile" component={ProfilePage} />
+        <Route path="/aerolab-challenge" component={ProductPage} />
+        <Route path="/aerolab-challenge/profile" component={ProfilePage} />
         <Route component={Error404Page} />
       </Switch>
     </div>
