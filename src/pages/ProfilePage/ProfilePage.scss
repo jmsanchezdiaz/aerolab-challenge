@@ -1,0 +1,23 @@
+.profile-page {
+  padding: 1.25rem;
+
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__back-button {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ff8800;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    transition: background 500ms ease;
+
+    &:hover {
+      background-color: #ffaf53;
+    }
+  }
+}

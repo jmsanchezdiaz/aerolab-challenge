@@ -1,0 +1,130 @@
+$gray: #adadad;
+$darkGray: #686868;
+$backColor: #11b4ffce;
+
+.btnResetedStyles {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0.3rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.product-item {
+  box-shadow: 5px 5px 5px #0000001a;
+  margin: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  transform: scale(1);
+  transition: transform 700ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover &__redeem-info,
+  &:hover &__buy-icon--blue {
+    display: grid;
+  }
+
+  &:hover &__buy-icon--white,
+  &__buy-icon--blue {
+    display: none;
+  }
+
+  &__info {
+    position: relative;
+
+    p {
+      color: $darkGray;
+      font-size: 0.9rem;
+    }
+  }
+
+  &__text {
+    border-top: 2px solid #cacaca;
+    padding-top: 1.25rem;
+
+    span {
+      color: $gray;
+    }
+
+    h4 {
+      color: $darkGray;
+    }
+  }
+
+  &__buy-icon {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    right: 0;
+  }
+
+  &__needed-points {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    right: 0;
+    background-color: $gray;
+    color: $darkGray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3125rem 0.3125rem 0.3125rem 0.625rem;
+    border-radius: 1.25rem;
+    margin: 0.3125rem;
+    gap: 0.3125rem;
+
+    &__label {
+      padding-bottom: 0.3rem;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__redeem-info {
+    position: absolute;
+    place-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $backColor;
+    display: none;
+  }
+
+  &__redeem-cost {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.5rem;
+
+    span {
+      align-self: flex-start;
+      padding-bottom: 0.375rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__redeem-btn {
+    @extend .btnResetedStyles;
+    background: $gray;
+    padding: 0.5rem 4rem;
+    border-radius: 25px;
+    color: $darkGray;
+    width: 100%;
+    font-size: 1.3rem;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+}

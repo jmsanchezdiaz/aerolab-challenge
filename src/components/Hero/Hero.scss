@@ -1,0 +1,15 @@
+.hero {
+  background: url("./header.png");
+  background-size: cover;
+  background-position: 80% 50%;
+  height: 40vh;
+  position: relative;
+
+  &__title {
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+}
