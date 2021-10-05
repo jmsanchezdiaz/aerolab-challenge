@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/aerolabchallenge/static/css/main.23659882.chunk.css",
-    "main.js": "/aerolabchallenge/static/js/main.3256d950.chunk.js",
-    "main.js.map": "/aerolabchallenge/static/js/main.3256d950.chunk.js.map",
+    "main.js": "/aerolabchallenge/static/js/main.f141ff00.chunk.js",
+    "main.js.map": "/aerolabchallenge/static/js/main.f141ff00.chunk.js.map",
     "runtime-main.js": "/aerolabchallenge/static/js/runtime-main.e181dfe4.js",
     "runtime-main.js.map": "/aerolabchallenge/static/js/runtime-main.e181dfe4.js.map",
-    "static/js/2.f6dac1ea.chunk.js": "/aerolabchallenge/static/js/2.f6dac1ea.chunk.js",
-    "static/js/2.f6dac1ea.chunk.js.map": "/aerolabchallenge/static/js/2.f6dac1ea.chunk.js.map",
+    "static/js/2.92d96e7e.chunk.js": "/aerolabchallenge/static/js/2.92d96e7e.chunk.js",
+    "static/js/2.92d96e7e.chunk.js.map": "/aerolabchallenge/static/js/2.92d96e7e.chunk.js.map",
     "index.html": "/aerolabchallenge/index.html",
     "static/css/main.23659882.chunk.css.map": "/aerolabchallenge/static/css/main.23659882.chunk.css.map",
-    "static/js/2.f6dac1ea.chunk.js.LICENSE.txt": "/aerolabchallenge/static/js/2.f6dac1ea.chunk.js.LICENSE.txt",
+    "static/js/2.92d96e7e.chunk.js.LICENSE.txt": "/aerolabchallenge/static/js/2.92d96e7e.chunk.js.LICENSE.txt",
     "static/media/arrow-left.e6eb9be1.svg": "/aerolabchallenge/static/media/arrow-left.e6eb9be1.svg",
     "static/media/arrow-right.3306c112.svg": "/aerolabchallenge/static/media/arrow-right.3306c112.svg",
     "static/media/buy-blue.c5c4f01c.svg": "/aerolabchallenge/static/media/buy-blue.c5c4f01c.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e181dfe4.js",
-    "static/js/2.f6dac1ea.chunk.js",
+    "static/js/2.92d96e7e.chunk.js",
     "static/css/main.23659882.chunk.css",
-    "static/js/main.3256d950.chunk.js"
+    "static/js/main.f141ff00.chunk.js"
   ]
 }
