@@ -9,7 +9,11 @@ const AppRouter = () => {
     <Router>
       <NavBar />
       <Switch>
-        <Route path="/profile" component={ProfilePage} />
+        <Route
+          exact
+          path="/aerolab-challenge/profile"
+          component={ProfilePage}
+        />
         <Route path="/aerolab-challenge" component={ProductPage} />
         <Route path="*" component={Error404Page} />
       </Switch>
