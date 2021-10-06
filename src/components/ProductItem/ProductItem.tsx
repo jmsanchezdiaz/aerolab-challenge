@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { ProductsContext } from "../../ProductsProvider/ProductsProvider";
 import Icons from "../Icons/Icons";
 import Loader from "../Loader/Loader";
+import BuyButton from "../BuyButton/BuyButton";
 
 interface ProductProps {
   product: Product;
@@ -64,20 +65,13 @@ const ProductItem = ({ product }: ProductProps) => {
               <span>{cost}</span>
               <img src={CoinIcon} alt="coin-icon" />
             </div>
-            {!isMobileView ? (
-              <button
-                onClick={handleReedem}
-                className="product-item__redeem-btn"
-              >
-                {wasBought ? <Loader /> : "Redeem Now"}
-              </button>
+            {wasBought ? (
+              <Loader />
             ) : (
-              <button
-                onDoubleClick={handleReedem}
-                className="product-item__redeem-btn"
-              >
-                {wasBought ? <Loader /> : "Redeem Now"}
-              </button>
+              <BuyButton
+                handleReedem={handleReedem}
+                isMobileView={isMobileView}
+              />
             )}
           </div>
         </>
