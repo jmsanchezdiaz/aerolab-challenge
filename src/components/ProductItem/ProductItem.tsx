@@ -1,7 +1,7 @@
 import CoinIcon from "./coin.svg";
 import { Product, Actions } from "../../interfaces/interfaces";
 import "./ProductItem.scss";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ProductsContext } from "../../ProductsProvider/ProductsProvider";
 import Icons from "../Icons/Icons";
 import Loader from "../Loader/Loader";
@@ -14,11 +14,23 @@ const ProductItem = ({ product }: ProductProps) => {
   //Obtenemos el estado desde el context y creamos el estado wasBought
   const { productsState, dispatch } = useContext(ProductsContext);
   const [wasBought, setWasBought] = useState<boolean>(false);
+  const [isMobileView, setIsMobileView] = useState<boolean>(false);
 
   //Destructuramos product y declaramos los puntos restantes y creamos la variable isAfordable para saber si el producto es costeable.
   const { name, category, cost, img } = product;
   const pointsRemaining = productsState.userPoints - cost;
   const isAfordable = pointsRemaining >= 0;
+
+  useEffect(() => {
+    const handleResizeComponents = (e: any) => {
+      if (window.innerWidth < 768) setIsMobileView(true);
+      else setIsMobileView(false);
+    };
+    window.addEventListener("resize", handleResizeComponents);
+    return () => {
+      window.removeEventListener("resize", handleResizeComponents);
+    };
+  }, []);
 
   const handleReedem = () => {
     setWasBought(true);
@@ -52,9 +64,21 @@ const ProductItem = ({ product }: ProductProps) => {
               <span>{cost}</span>
               <img src={CoinIcon} alt="coin-icon" />
             </div>
-            <button onClick={handleReedem} className="product-item__redeem-btn">
-              {wasBought ? <Loader /> : "Redeem Now"}
-            </button>
+            {!isMobileView ? (
+              <button
+                onClick={handleReedem}
+                className="product-item__redeem-btn"
+              >
+                {wasBought ? <Loader /> : "Redeem Now"}
+              </button>
+            ) : (
+              <button
+                onDoubleClick={handleReedem}
+                className="product-item__redeem-btn"
+              >
+                {wasBought ? <Loader /> : "Redeem Now"}
+              </button>
+            )}
           </div>
         </>
       ) : (
