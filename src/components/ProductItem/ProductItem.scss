@@ -26,12 +26,14 @@ $backColor: #11b4ffce;
   }
 
   &:hover &__redeem-info,
-  &:hover &__buy-icon--blue {
+  &:hover &__buy-icon--blue,
+  &:hover &__redeem-btn {
     display: grid;
   }
 
   &:hover &__buy-icon--white,
-  &__buy-icon--blue {
+  &__buy-icon--blue,
+  &__redeem-btn {
     display: none;
   }
 
