@@ -1,7 +1,7 @@
 {
   "name": "aerolab-challenge-2021",
   "version": "0.1.0",
-  "homepage": "https://jmsanchezdiaz.github.io/aerolabchallenge",
+  "homepage": "https://jmsanchezdiaz.github.io/aerolab-challenge",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
